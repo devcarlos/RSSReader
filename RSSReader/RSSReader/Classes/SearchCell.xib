@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="SearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v0K-jK-Cvj">
+                        <rect key="frame" x="13" y="9" width="144" height="81"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.87843137250000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="144" id="Txg-Lh-k32"/>
+                            <constraint firstAttribute="height" constant="81" id="ewL-KP-DXt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIDEO: What if you could print your next car?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i31-JJ-2nV">
+                        <rect key="frame" x="162" y="9" width="430" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="3tG-ui-w4V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYP-8o-T9o">
+                        <rect key="frame" x="162" y="27" width="430" height="63"/>
+                        <string key="text">Arizona-based Local Motors made car history recently when it became the first firm to 3D print a driveable car. The BBC's Samira Hussain was given exclusive access behind the wheel.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i31-JJ-2nV" firstAttribute="top" secondItem="v0K-jK-Cvj" secondAttribute="top" id="3sc-f9-8sZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jYP-8o-T9o" secondAttribute="bottom" constant="1" id="46G-Em-mSN"/>
+                    <constraint firstItem="v0K-jK-Cvj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Cch-EX-zAJ"/>
+                    <constraint firstItem="i31-JJ-2nV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Jst-Zs-SqP"/>
+                    <constraint firstItem="jYP-8o-T9o" firstAttribute="top" secondItem="i31-JJ-2nV" secondAttribute="top" id="NRB-Hd-cTc"/>
+                    <constraint firstAttribute="centerY" secondItem="v0K-jK-Cvj" secondAttribute="centerY" id="V8S-OL-nqo"/>
+                    <constraint firstItem="jYP-8o-T9o" firstAttribute="leading" secondItem="i31-JJ-2nV" secondAttribute="leading" id="aHa-HA-Slz"/>
+                    <constraint firstItem="jYP-8o-T9o" firstAttribute="trailing" secondItem="i31-JJ-2nV" secondAttribute="trailing" id="iPE-bX-LMb"/>
+                    <constraint firstItem="jYP-8o-T9o" firstAttribute="top" secondItem="i31-JJ-2nV" secondAttribute="bottom" id="l3r-Eq-3ef"/>
+                    <constraint firstItem="i31-JJ-2nV" firstAttribute="leading" secondItem="v0K-jK-Cvj" secondAttribute="trailing" constant="5" id="unt-ay-diJ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="NRB-Hd-cTc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desc" destination="jYP-8o-T9o" id="PKQ-z5-xeY"/>
+                <outlet property="thumbnail" destination="v0K-jK-Cvj" id="9Wl-HX-p7W"/>
+                <outlet property="title" destination="i31-JJ-2nV" id="FlL-9q-zaY"/>
+            </connections>
+            <point key="canvasLocation" x="322" y="365"/>
+        </tableViewCell>
+    </objects>
+</document>

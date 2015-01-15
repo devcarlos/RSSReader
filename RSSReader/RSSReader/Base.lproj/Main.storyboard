@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="udT-Rn-PnA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--BBC News-->
+        <scene sceneID="NXK-ha-VHt">
+            <objects>
+                <tableViewController storyboardIdentifier="RSSMaster" id="1ji-WR-oTb" customClass="RSSMaster" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="osI-Xo-mr4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RSSCell" rowHeight="100" id="jQc-Au-XJo" customClass="RSSCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQc-Au-XJo" id="WKP-Cm-usV">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIDEO: What if you could print your next car?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzl-Z5-39b">
+                                            <rect key="frame" x="162" y="8" width="430" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="KFR-um-JiD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa6-Oo-Gf7">
+                                            <rect key="frame" x="162" y="26" width="430" height="65"/>
+                                            <string key="text">Arizona-based Local Motors made car history recently when it became the first firm to 3D print a driveable car. The BBC's Samira Hussain was given exclusive access behind the wheel.</string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2g-8h-mxF">
+                                            <rect key="frame" x="13" y="10" width="144" height="81"/>
+                                            <color key="backgroundColor" red="0.88235294119999996" green="0.87843137250000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="81" id="KuM-Eq-Wsr"/>
+                                                <constraint firstAttribute="width" constant="144" id="Maz-QI-RGV"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="fa6-Oo-Gf7" firstAttribute="top" secondItem="Bzl-Z5-39b" secondAttribute="bottom" id="10G-M6-Sb9"/>
+                                        <constraint firstItem="Bzl-Z5-39b" firstAttribute="trailing" secondItem="WKP-Cm-usV" secondAttribute="trailingMargin" id="525-bK-aXh"/>
+                                        <constraint firstItem="g2g-8h-mxF" firstAttribute="top" secondItem="Bzl-Z5-39b" secondAttribute="top" constant="2" id="8Zj-S1-mHu"/>
+                                        <constraint firstItem="Bzl-Z5-39b" firstAttribute="leading" secondItem="g2g-8h-mxF" secondAttribute="trailing" constant="10" id="9e5-az-b4e"/>
+                                        <constraint firstItem="Bzl-Z5-39b" firstAttribute="top" secondItem="WKP-Cm-usV" secondAttribute="topMargin" id="Bzz-1t-KRR"/>
+                                        <constraint firstItem="g2g-8h-mxF" firstAttribute="leading" secondItem="WKP-Cm-usV" secondAttribute="leadingMargin" constant="10" id="Cek-Pe-nWS"/>
+                                        <constraint firstItem="fa6-Oo-Gf7" firstAttribute="trailing" secondItem="Bzl-Z5-39b" secondAttribute="trailing" id="E0i-jF-MQR"/>
+                                        <constraint firstAttribute="centerY" secondItem="g2g-8h-mxF" secondAttribute="centerY" constant="-1" id="EmO-hU-Goc"/>
+                                        <constraint firstItem="g2g-8h-mxF" firstAttribute="leading" secondItem="WKP-Cm-usV" secondAttribute="leadingMargin" constant="5" id="G50-hq-XZI"/>
+                                        <constraint firstItem="fa6-Oo-Gf7" firstAttribute="bottom" secondItem="WKP-Cm-usV" secondAttribute="bottomMargin" id="MyL-Qb-fX4"/>
+                                        <constraint firstItem="Bzl-Z5-39b" firstAttribute="leading" secondItem="g2g-8h-mxF" secondAttribute="trailing" constant="5" id="Y8t-kD-uZC"/>
+                                        <constraint firstItem="fa6-Oo-Gf7" firstAttribute="leading" secondItem="g2g-8h-mxF" secondAttribute="trailing" constant="10" id="b9B-ny-PA2"/>
+                                        <constraint firstItem="fa6-Oo-Gf7" firstAttribute="leading" secondItem="Bzl-Z5-39b" secondAttribute="leading" id="smH-f4-1Mt"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Cek-Pe-nWS"/>
+                                            <exclude reference="9e5-az-b4e"/>
+                                            <exclude reference="Bzz-1t-KRR"/>
+                                            <exclude reference="b9B-ny-PA2"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="desc" destination="fa6-Oo-Gf7" id="eHB-UT-4Ht"/>
+                                    <outlet property="thumb" destination="g2g-8h-mxF" id="Uxk-wU-Eho"/>
+                                    <outlet property="title" destination="Bzl-Z5-39b" id="YBs-2c-0Yq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1ji-WR-oTb" id="lGc-Zg-5RK"/>
+                            <outlet property="delegate" destination="1ji-WR-oTb" id="wzI-nN-tHt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="BBC News" id="yxF-fr-TUb"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="fdY-40-TD7" id="pmH-ns-XDn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oh6-x5-5Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="fdY-40-TD7">
+                    <connections>
+                        <outlet property="delegate" destination="1ji-WR-oTb" id="8bV-Z3-Mc6"/>
+                        <outlet property="searchContentsController" destination="1ji-WR-oTb" id="Hdn-d4-Q81"/>
+                        <outlet property="searchResultsDataSource" destination="1ji-WR-oTb" id="nmr-yA-zNg"/>
+                        <outlet property="searchResultsDelegate" destination="1ji-WR-oTb" id="HBu-ev-1ne"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1081" y="107"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="RSSDetail" id="vXZ-lx-hvc" customClass="RSSDetail" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnV-0F-jpD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NnV-0F-jpD" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="3tR-9R-HdA"/>
+                            <constraint firstAttribute="trailing" secondItem="NnV-0F-jpD" secondAttribute="trailing" id="L7K-xh-2ag"/>
+                            <constraint firstItem="NnV-0F-jpD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="NX8-eS-mxj"/>
+                            <constraint firstItem="NnV-0F-jpD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Osy-EG-4m7"/>
+                            <constraint firstItem="NnV-0F-jpD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nCZ-yT-SZX"/>
+                            <constraint firstItem="NnV-0F-jpD" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="rHE-NU-4o4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3tR-9R-HdA"/>
+                                <exclude reference="nCZ-yT-SZX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="49I-1S-1dy"/>
+                    <connections>
+                        <outlet property="webView" destination="NnV-0F-jpD" id="gzl-PC-CXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="852"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VlF-8e-kXd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udT-Rn-PnA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Raj-1Q-UYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ji-WR-oTb" kind="relationship" relationship="rootViewController" id="1nq-1R-Ns0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3T-ng-D6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="107"/>
+        </scene>
+    </scenes>
+</document>
